@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <style>
+        body{
+            font-family: Aerial,sans-serif;
+            background-color: rgb(4, 144, 21);
+        }
+        .container{
+            padding-top: 5px;
+            background-color: whitesmoke;
+            height: 440px;
+            width: 400px;
+            margin-top: 150px;
+            margin-left: 550px;
+            text-align: center;
+        }
+        .name{
+            margin-top: 20px;
+        }
+        .email{
+            margin-top: 20px;
+        }
+        .gender{
+            margin-top: 20px;
+        }
+        .age{
+            margin-top: 20px;
+        }
+        .address{
+            margin-top: 20px;
+        }
+        .username{
+            margin-top: 20px;
+        }
+        .password{
+            margin-top: 20px;
+        }
+        .confirmPassword{
+            margin-top: 20px;
+        }
+        .submit{
+            margin-top: 20px;
+        }
+        button{
+            background-color: black;
+            text-align: center;
+            padding: 5px 20px;
+            font-size: medium;
+            color: white;
+            cursor: pointer;
+            transition: all 0.1s ease-in-out;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:active {
+            transform: scale(0.95); /* Slightly shrink on click */
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Add shadow for visibility */ 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container"><h3>Sign up to continue</h3>
+        <div class="name">Name:
+            <input id="name" type="text" value="" required>
+        </div>
+        <div class="email">Email:
+            <input id="email" type="text" value="" required>
+        </div>
+        <div class="gender">Gender:
+            <label>
+                <input type="radio" name="gender" value="male" id="male"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female" id="female"> Female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other" id="other"> Other
+            </label>
+        </div>
+
+        <div class="age">Age:
+            <input id="age" type="text" value="" required>
+        </div>
+        <div class="address">Address:
+            <input id="address" type="text" value="" required>
+        </div>
+
+        <div class="username">Username:
+            <input id="username" type="text" value="" required>
+        </div>
+        <div class="password">Password:
+            <input id="password" type="text" value="" required>
+        </div>
+
+        <div class="confirmPassword">Confirm Password:
+            <input id="confirmPassword" type="password" value="" required>
+        </div>
+
+        <div class="submit">
+            <button type="button" id="submit">Submit</button>
+            <button type="button" id="back">Back</button>
+        </div>
+    </div>
+
+    <script src="signUpScript.js"></script>
+</body>
+</html>

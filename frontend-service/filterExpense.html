@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Manager</title>
+</head>
+<body>
+    <h1>Expense Filter Manager</h1>
+
+    <!-- Dropdown for Filter Selection -->
+    <label for="filterType">Filter By:</label>
+    <select id="filterType" onchange="toggleValueInput()">
+        <option value="showAll">Show All Expenses</option>
+        <option value="category">Filter by Category</option>
+        <option value="subcategory">Filter by Subcategory</option>
+        <option value="necessity">Filter by Necessity</option>
+    </select>
+
+    <!-- Input for Filter Value -->
+    <input type="text" id="filterValue" placeholder="Enter Value" style="display:none;">
+
+    <!-- Button to Apply Filter -->
+    <button onclick="getExpenses()">Apply</button>
+
+    <!-- Clear Screen Button -->
+    <button onclick="clearScreen()">Clear Screen</button>
+
+    <!-- Expenses Table -->
+    <table id="expenseTable" border="1">
+        <thead>
+            <tr>
+                <th>Serial</th>
+                <th>Category</th>
+                <th>Subcategory</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Consumer</th>
+                <th>Necessity</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Navigation Buttons -->
+    <br>
+    <a href="expenses.html"><button>Go to Update/Delete</button></a>
+    <a href="loginSuccess.html"><button>Back</button></a>
+
+    <script src="filterExpense.js"></script>
+    <script src="onAllPages.js"></script>
+</body>
+</html>

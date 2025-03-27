@@ -1,0 +1,44 @@
+body{
+    font-family: Aerial,sans-serif;
+    background-color: rgb(4, 144, 21);
+}
+.container{
+    padding-top: 5px;
+    background-color: whitesmoke;
+    height: 200px;
+    width: 400px;
+    margin-top: 200px;
+    margin-left: 500px;
+    text-align: center;
+}
+.username{
+    margin-top: 20px;
+}
+
+.password{
+    margin-top: 20px;
+}
+
+.submit{
+    margin-top: 20px;
+}
+
+button{
+    margin-left: 25px;
+    background-color: black;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: medium;
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Add shadow for visibility */ 
+}
